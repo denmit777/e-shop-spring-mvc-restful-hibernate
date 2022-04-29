@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>http://www.online-shop.com</title>
+</head>
+<body>
+<h2 align="center">Dear <span th:text="${login}"></span>, your order:</h2>
+<div align="center">
+    <h2>
+        <pre th:text="${order}"></pre>
+    </h2>
+</div>
+<h2 align="center">Total: $ <span th:text="${totalPrice}"></span></h2>
+<form action="/login" method="get" align="center">
+    <input name="submit" type="submit" value="Log out">
+</form>
+</body>
+</html>

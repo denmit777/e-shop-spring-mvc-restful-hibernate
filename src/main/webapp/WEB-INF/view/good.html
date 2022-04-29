@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>http://www.online-shop.com</title>
+</head>
+<body>
+<h2 align="center">Hello <span th:text="${login}"></span>!</h2>
+<div align="center">
+    <h2>
+        <pre th:text="${choice}"></pre>
+    </h2>
+</div>
+<form action="/createCart" method="post" align="center">
+    <select name="goodName" id="goodName" th:utext="${options}">
+    </select><br/><br/>
+    <input name="submit" type="submit" value="Add Good">
+    <input name="submit" type="submit" value="Submit">
+    <br/><br/>
+    <input name="submit" type="submit" value="Log out">
+</form>
+</body>
+</html>
